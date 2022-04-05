@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyF_Week6.Demo", "PreAcademyF_Week6.Demo\PreAcademyF_Week6.Demo.csproj", "{7FFD85B0-264A-4E43-BCEB-BEE19FDA2F0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyF_Week6.Demo", "PreAcademyF_Week6.Demo\PreAcademyF_Week6.Demo.csproj", "{7FFD85B0-264A-4E43-BCEB-BEE19FDA2F0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgettoDiProva", "ProgettoDiProva\ProgettoDiProva.csproj", "{147516C9-72C0-41B0-AAC6-BC77A2241721}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgettoDiProva", "ProgettoDiProva\ProgettoDiProva.csproj", "{147516C9-72C0-41B0-AAC6-BC77A2241721}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyF_Week6.Azienda", "PreAcademyF_Week6.Azienda\PreAcademyF_Week6.Azienda.csproj", "{F90B78C5-065A-4617-8CC0-3F67AA5F864A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyF_Week6.Azienda", "PreAcademyF_Week6.Azienda\PreAcademyF_Week6.Azienda.csproj", "{F90B78C5-065A-4617-8CC0-3F67AA5F864A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyF_Week6.Calcio", "PreAcademyF_Week6.Calcio\PreAcademyF_Week6.Calcio.csproj", "{CACF507E-3B65-411C-BF2E-2E0F2950E1DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F90B78C5-065A-4617-8CC0-3F67AA5F864A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F90B78C5-065A-4617-8CC0-3F67AA5F864A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F90B78C5-065A-4617-8CC0-3F67AA5F864A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACF507E-3B65-411C-BF2E-2E0F2950E1DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACF507E-3B65-411C-BF2E-2E0F2950E1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACF507E-3B65-411C-BF2E-2E0F2950E1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACF507E-3B65-411C-BF2E-2E0F2950E1DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
