@@ -41,3 +41,4 @@ Portiere p1 = new Portiere("Gigi", "Buffon", 40);
 SquadraManager.AddCalciatore(p1, milan);
 
 Console.ReadLine();
+
