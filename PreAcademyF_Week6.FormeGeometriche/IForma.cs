@@ -8,7 +8,7 @@ namespace PreAcademyF_Week6.FormeGeometriche
 {
     internal interface IForma
     {
-        double CalcolaArea();
+        double CalcolaArea();       
         double CalcolaPerimetro();
     }
 }

@@ -9,15 +9,30 @@ namespace PreAcademyF_Week6.FormeGeometriche
     internal class Rettangolo : IForma
     {
 
+        public double Base { get; set; }
+        public double Altezza { get; set; }
+        
+
+        public Rettangolo(double b, double h)
+        {
+            Base = b;
+            Altezza = h;
+        }
+
         public double CalcolaArea()
         {
-            throw new NotImplementedException();
+            return Base * Altezza;
         }
 
         public double CalcolaPerimetro()
         {
-            throw new NotImplementedException();
+            return (Base + Altezza) * 2;
         }
-        
+
+        public override string ToString()
+        {
+            return $"Rettangolo: base={Base} \tAltezza={Altezza}";
+        }
+
     }
 }
