@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgettoDiProva", "Progetto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyF_Week6.Azienda", "PreAcademyF_Week6.Azienda\PreAcademyF_Week6.Azienda.csproj", "{F90B78C5-065A-4617-8CC0-3F67AA5F864A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyF_Week6.Calcio", "PreAcademyF_Week6.Calcio\PreAcademyF_Week6.Calcio.csproj", "{CACF507E-3B65-411C-BF2E-2E0F2950E1DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyF_Week6.Calcio", "PreAcademyF_Week6.Calcio\PreAcademyF_Week6.Calcio.csproj", "{CACF507E-3B65-411C-BF2E-2E0F2950E1DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyF_Week6.FormeGeometriche", "PreAcademyF_Week6.FormeGeometriche\PreAcademyF_Week6.FormeGeometriche.csproj", "{2D5CD9C6-2726-4E03-B773-36610F7C7897}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyF_Week6.FormeGeometriche", "PreAcademyF_Week6.FormeGeometriche\PreAcademyF_Week6.FormeGeometriche.csproj", "{2D5CD9C6-2726-4E03-B773-36610F7C7897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyF_Week6.ADO", "PreAcademyF_Week6.ADO\PreAcademyF_Week6.ADO.csproj", "{F3555A9F-F476-43F3-AD83-26F7686D45B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2D5CD9C6-2726-4E03-B773-36610F7C7897}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D5CD9C6-2726-4E03-B773-36610F7C7897}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D5CD9C6-2726-4E03-B773-36610F7C7897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3555A9F-F476-43F3-AD83-26F7686D45B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3555A9F-F476-43F3-AD83-26F7686D45B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3555A9F-F476-43F3-AD83-26F7686D45B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3555A9F-F476-43F3-AD83-26F7686D45B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
