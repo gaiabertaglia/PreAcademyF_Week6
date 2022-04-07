@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyF_Week6.Calcio", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyF_Week6.FormeGeometriche", "PreAcademyF_Week6.FormeGeometriche\PreAcademyF_Week6.FormeGeometriche.csproj", "{2D5CD9C6-2726-4E03-B773-36610F7C7897}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyF_Week6.ADO", "PreAcademyF_Week6.ADO\PreAcademyF_Week6.ADO.csproj", "{F3555A9F-F476-43F3-AD83-26F7686D45B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyF_Week6.ADO", "PreAcademyF_Week6.ADO\PreAcademyF_Week6.ADO.csproj", "{F3555A9F-F476-43F3-AD83-26F7686D45B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyF_Week6.Biblioteca", "PreAcademyF_Week6.Biblioteca\PreAcademyF_Week6.Biblioteca.csproj", "{44945F57-9EF1-4BBA-8638-2446F8DF8AD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{F3555A9F-F476-43F3-AD83-26F7686D45B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3555A9F-F476-43F3-AD83-26F7686D45B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3555A9F-F476-43F3-AD83-26F7686D45B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44945F57-9EF1-4BBA-8638-2446F8DF8AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44945F57-9EF1-4BBA-8638-2446F8DF8AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44945F57-9EF1-4BBA-8638-2446F8DF8AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44945F57-9EF1-4BBA-8638-2446F8DF8AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

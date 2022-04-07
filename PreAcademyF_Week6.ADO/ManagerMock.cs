@@ -14,10 +14,7 @@ namespace PreAcademyF_Week6.ADO
             new Film{FilmId=2, Titolo="Peter Pan", Durata=60, Genere="Animazione"}
         };
 
-        public void EliminaFilm(int idFilmDaEliminare)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public void GetAllFilms()
         {
@@ -78,12 +75,45 @@ namespace PreAcademyF_Week6.ADO
 
         public void InserisciFilm(string titolo, string genere, int durata)
         {
-            throw new NotImplementedException();
+            int maxId = 0;
+            foreach (var item in Films)
+            {
+                if (item.FilmId > maxId)
+                {
+                    maxId = item.FilmId;
+                }
+            }
+            Film film = new Film();
+            film.FilmId = maxId + 1;
+            film.Durata = durata;
+            film.Titolo = titolo;
+            film.Genere = genere;
+            Films.Add(film);
+            Console.WriteLine($"Aggiunto il film {film.ToString()}");
         }
 
         public void ModificaDurataFilm(int idFilm, int nuovaDurata)
         {
-            throw new NotImplementedException();
+            foreach(var item in Films)
+            {
+                if (item.FilmId == idFilm)
+                {
+                    item.Durata = nuovaDurata;                    
+                }
+            }            
+            Console.WriteLine($"Film modificato");            
+        }
+
+        public void EliminaFilm(int idFilmDaEliminare)
+        {
+            foreach (var item in Films)
+            {
+                if (item.FilmId == idFilmDaEliminare)
+                {
+                    Films.Remove(item);
+                }
+            }
+            Console.WriteLine($"Film eliminato");
         }
     }
 }
