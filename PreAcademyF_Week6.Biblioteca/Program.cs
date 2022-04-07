@@ -26,6 +26,7 @@ Console.WriteLine("Benvenuto nella Biblioteca");
 RepositoryAudiolibriMOCK repositoryAudioLibri = new RepositoryAudiolibriMOCK();
 RepositoryLibriCartaceiMOCK repositoryLibriCartacei = new RepositoryLibriCartaceiMOCK();
 
+
 bool continua = true;
 while (continua)
 {
@@ -45,13 +46,14 @@ while (continua)
     switch (scelta)
     {
         case 1:
-            //Visulaizzare Tutti i libri
-
+            //Visualizzare Tutti i libri
+            VisualizzaTutti();
             break;
         case 2:
             StampaTuttiILibriCartacei();
             break;
         case 3:
+            StampaTuttiGliAudiolibri();
             break;
         case 0:
             continua = false;
@@ -60,13 +62,53 @@ while (continua)
     }
 }
 
+void VisualizzaTutti()
+{
+    Console.WriteLine("Tutti i libri della biblioteca sono:");
+    var audiolibri = repositoryAudioLibri.GetAll();
+    var libriCartacei=repositoryLibriCartacei.GetAll();
+    List<Libro> listaCompleta=new List<Libro>();
+    listaCompleta.AddRange(audiolibri);
+    listaCompleta.AddRange(libriCartacei);
+
+    foreach (var item in listaCompleta)
+    {
+        Console.WriteLine(item.ToString());
+    }
+
+}
+
+void StampaTuttiGliAudiolibri()
+{
+    var audiolibri = repositoryAudioLibri.GetAll();
+    if(audiolibri.Count == 0)
+    {
+        Console.WriteLine("Lista vuota");
+    }
+    else
+    {
+        Console.WriteLine("Ecco tutti gli audiolibri");
+        foreach (var item in audiolibri)
+        {
+            Console.WriteLine(item.ToString());
+        }
+    }
+    
+}
+
 void StampaTuttiILibriCartacei()
 {
     var listaLibri=repositoryLibriCartacei.GetAll();
-
-    Console.WriteLine("Ecco tutti i libri cartacei");
-    foreach (var item in listaLibri)
+    if (listaLibri.Count == 0)
     {
-        Console.WriteLine(item);
+        Console.WriteLine("Lista vuota");
+    }
+    else
+    {
+        Console.WriteLine("Ecco tutti i libri cartacei");
+        foreach (var item in listaLibri)
+        {
+            Console.WriteLine(item);
+        }
     }
 }

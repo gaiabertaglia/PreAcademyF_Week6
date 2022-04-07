@@ -22,7 +22,7 @@ namespace PreAcademyF_Week6.Biblioteca
 
         public override string ToString()
         {
-            return base.ToString() + $"\t Durata={DurataInMinuti} minuti \tTipo: (AudioLibro) {GetType()}";
+            return base.ToString() + $"\t Durata={DurataInMinuti} minuti \tTipo: {GetType().Name}";
         }
     }
 }

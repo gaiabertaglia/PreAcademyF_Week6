@@ -25,7 +25,7 @@ namespace PreAcademyF_Week6.Biblioteca
 
         public override string ToString()
         {
-            return base.ToString() + $"\t Pagine={NumeroDiPagine} \t Scorte:{QuantitaInMagazzino} \tTipo: (Libro cartaceo) {GetType()}";
+            return base.ToString() + $"\t Pagine={NumeroDiPagine} \t Scorte:{QuantitaInMagazzino} \tTipo: {GetType().Name}";
         }
     }
 }
