@@ -67,7 +67,7 @@ while (continua)
             ModificaDurataAudiolibro();
             break;
         case 6:
-            
+            CercaLibriPerTitolo();
             break;
         case 7:
             InserisciNuovoLibro();
@@ -76,6 +76,22 @@ while (continua)
             continua = false;
             Console.WriteLine("Arrivederci!");
             break;
+    }
+}
+
+void CercaLibriPerTitolo()
+{
+    Console.WriteLine("Inserisci il titolo da ricercare:");
+    string titoloDaRicercare = Console.ReadLine();
+    var l1 = repositoryAudioLibri.GetByTitle(titoloDaRicercare);
+    var l2 = repositoryAudioLibri.GetByTitle(titoloDaRicercare);
+    List<Libro> libri = new List<Libro>();
+    libri.Add(l1);
+    libri.Add(l2);
+    Console.WriteLine("Ecco i libri(audiolibri/libri cartacei) corrispondenti al titolo inserito:");
+    foreach (var item in libri)
+    {
+        Console.WriteLine(item);
     }
 }
 

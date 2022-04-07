@@ -15,7 +15,16 @@ namespace PreAcademyF_Week6.Biblioteca
         };
         public bool Aggiungi(LibroCartaceo item)
         {
-            throw new NotImplementedException();
+            if (item != null)
+            {
+                var libroEsistente = GetByISBN(item.ISBN);
+                if (libroEsistente == null)
+                {
+                    libriCartacei.Add(item);
+                    return true;
+                }
+            }
+            return false;
         }
 
         public List<LibroCartaceo> GetAll()
@@ -28,6 +37,18 @@ namespace PreAcademyF_Week6.Biblioteca
             foreach (var item in libriCartacei)
             {
                 if(item.ISBN == isbn)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public LibroCartaceo GetByTitle(string titolo)
+        {
+            foreach (var item in libriCartacei)
+            {
+                if (item.Titolo == titolo)
                 {
                     return item;
                 }

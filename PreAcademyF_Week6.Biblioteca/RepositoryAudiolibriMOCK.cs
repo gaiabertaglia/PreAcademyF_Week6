@@ -16,7 +16,16 @@ namespace PreAcademyF_Week6.Biblioteca
 
         public bool Aggiungi(AudioLibro item)
         {
-            throw new NotImplementedException();
+            if (item != null)
+            {
+                var libroEsistente = GetByISBN(item.ISBN);
+                if (libroEsistente == null)
+                {
+                    audiolibri.Add(item);
+                    return true;
+                }
+            }
+            return false;
         }
 
         public List<AudioLibro> GetAll()
@@ -29,6 +38,18 @@ namespace PreAcademyF_Week6.Biblioteca
             foreach (var item in audiolibri)
             {
                 if (item.ISBN == isbn)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public AudioLibro GetByTitle(string titolo)
+        {
+            foreach (var item in audiolibri)
+            {
+                if (item.Titolo == titolo)
                 {
                     return item;
                 }

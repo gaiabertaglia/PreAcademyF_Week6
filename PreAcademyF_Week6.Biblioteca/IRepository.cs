@@ -10,6 +10,7 @@ namespace PreAcademyF_Week6.Biblioteca
     {
         List<T> GetAll();
         T GetByISBN(int isbn);
-        bool Aggiungi(T item);        
+        bool Aggiungi(T item);
+        T GetByTitle(string titolo);
     }
 }
