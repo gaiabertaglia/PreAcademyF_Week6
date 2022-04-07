@@ -25,12 +25,27 @@ namespace PreAcademyF_Week6.Biblioteca
 
         public LibroCartaceo GetByISBN(int isbn)
         {
-            throw new NotImplementedException();
+            foreach (var item in libriCartacei)
+            {
+                if(item.ISBN == isbn)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
 
         public bool ModificaQuantita(int isbn, int nuovaQuantita)
         {
-            throw new NotImplementedException();
+            var libroDaModificare = GetByISBN(isbn);
+            if(libroDaModificare == null) {
+                return false;
+            }
+            else
+            {
+                libroDaModificare.QuantitaInMagazzino = nuovaQuantita;
+                return true;
+            }
         }
     }
 }

@@ -26,12 +26,28 @@ namespace PreAcademyF_Week6.Biblioteca
 
         public AudioLibro GetByISBN(int isbn)
         {
-            throw new NotImplementedException();
+            foreach (var item in audiolibri)
+            {
+                if (item.ISBN == isbn)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
 
         public bool ModificaDurata(int isbn, int nuovaDurata)
         {
-            throw new NotImplementedException();
+            var audiolibroDaModificare = GetByISBN(isbn);
+            if (audiolibroDaModificare == null)
+            {
+                return false;
+            }
+            else
+            {
+                audiolibroDaModificare.DurataInMinuti = nuovaDurata;
+                return true;
+            }
         }
     }
 }
